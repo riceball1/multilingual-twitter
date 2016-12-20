@@ -1,0 +1,232 @@
+* {
+	box-sizing: border-box;
+}
+
+/* colors:
+	#E63663 - bright coral
+	#03A9F4 - bright blue
+	#95A5A6 - grayish
+	#494F4F - darkgray
+*/
+
+html, body {
+	min-height: 100%;
+	color: #000;
+}
+a:link, a {
+	color: #03A9F4 ;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 12px;
+}
+a:hover {
+	color: #000;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: #ddd;
+	padding: 10px;
+	position: relative;
+}
+.container {
+	margin: 0px auto;
+	padding: 10px;
+}
+.tools {
+	padding: 20px;
+	text-align: center;
+}
+#twitter-keyword-entry {
+		position: relative;
+}
+.search-glass {
+	position: absolute;
+	right: 0;
+	width: 16px;
+	height: auto;
+}
+/* header */
+header {
+	text-align: center;
+	margin: 0 auto;
+}
+h1 {
+	color: #03A9F4;
+	font-size: 400%;
+	margin: 0px;
+	font-family: 'Bree Serif', serif;
+	text-shadow: 0px 4px rgba(0,0,0,0.2);
+}
+.subtitle {
+	color: #E63663;
+	font-size: 1.2em;
+	text-shadow: 0px 2px rgba(0,0,0,0.2);
+}
+/* form */
+
+.search-form {
+	padding: 20px;
+	text-align: center;
+}
+.submit-button {
+	font-size: 30px;
+	padding: 10px;
+	width: 15%;
+	text-align: center;
+	border-radius: 10px;
+	border: none;
+	background-color: #E63663;
+	color: #FFF;
+	font-weight: bold;
+}
+.submit-button:hover {
+	color: #95A5A6;
+}
+input[type="text"], #limitTweeterItems {
+	padding: 10px;
+	border-radius: 10px;
+	border: 2px solid #E63663;
+	width: 40%;
+	font-size: 30px;
+}
+#limitTweeterItems {
+	width: 10%;
+	font-size: 30px;
+	padding: 10px;
+}
+
+/** TWEET LIST **/
+.tweet-list {
+	border: 1px solid #95A5A6;
+	width: 80%;
+	height: 600px;
+	margin: 10px auto;
+	overflow: auto;
+	border-radius: 5px;
+}
+.individual-tweets {
+	margin: 5px;
+	padding: 10px;
+	border: 1px solid #95A5A6;
+	border-radius: 2px;
+	background-color: #FFF;
+	z-index: -100;
+}
+img.avatar {
+	display: inline-block;
+	border-radius: 5px;
+	padding: 3px;
+	width: 60px;
+	height: 60px;
+	margin-right: 5px;
+}
+span.authorName, span.authorHandle, span.timestamp {
+	position: relative;
+	top: -5px;
+}
+span.authorName {
+	font-size: 1.3em;
+	font-weight: bold;
+}
+span.authorHandle {
+	color: #494F4F;
+}
+.timestamp {
+	color: #494F4F;
+	font-size: 12px;
+	margin-left: 10px;
+}
+.action {
+	margin-right: 10px;
+}
+
+/* DROPDOWN MENU */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+		width: 400px;
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 400px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+/* Links inside the dropdown */
+.dropdown-content option {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+/* Change color of dropdown links on hover */
+.dropdown-content option:hover {
+	background-color: #f1f1f1;
+	color: #03A9F4;
+	cursor: pointer;
+}
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+.language-choice {
+	display: none;
+	padding: 16px;
+	margin: 0 auto;
+	font-size: 16px;
+	border: none;
+	width: 400px;
+	background-color: white;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.twitter-share-button {
+	cursor: pointer;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+/** OTHER STYLES **/
+.hidden {
+	display: none;
+}
+
+/** MEDIA QUERIES **/
+@media (max-width: 900px) {
+	input[type="text"], #limitTweeterItems {
+		font-size: 16px;
+	}
+	.submit-button {
+		font-size: 16px;
+		cursor: pointer;
+	}
+}
+
+@media (max-width: 600px) {
+	input[type="text"], #limitTweeterItems {
+		font-size: 14px;
+	}
+	.submit-button {
+		font-size: 14px;
+	}
+}
