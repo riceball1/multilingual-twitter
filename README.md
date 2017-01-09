@@ -9,7 +9,7 @@ Users are able to query twitter with a keyword and return results based on a lim
 
 ##Demo Page
 ###http://www.danafng.com/thinkful/capstone1/
-## Gomix Demo: https://picayune-basement.gomix.me
+### Gomix Demo: https://tweet-translate.gomix.me/
 
 ##Technologies Used
 
