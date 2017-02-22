@@ -15,10 +15,11 @@
     "node": "6.9.1"
   },
   "repository": {
-    "url": "https://gomix.com/#!/project/welcome-project"
+    "url": "https://github.com/riceball1/multilingual-twitter"
   },
   "keywords": [
     "node",
     "express"
-  ]
+  ],
+  "license": "MIT"
 }

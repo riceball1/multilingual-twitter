@@ -1,21 +1,18 @@
 // server.js
-var Twit = require('twit');
-var express = require('express');
-var app = express();
-var path = require('path');
-var express = require('express');
+const Twit = require('twit');
+const express = require('express');
+const app = express();
+const path = require('path');
 
-var app = express();
 
-// http://expressjs.com/en/starter/static-files.html
 app.use(express.static('public'));
 
 
-var T = new Twit({
-  consumer_key:         'QnLFzUyAUAmlUe5xcN11tbxLL',
-  consumer_secret:      'Q2ffUrLmj8hgyyYLlP0thuoXXaiuWXl9s5DQqlm47ByuiGecZa',
-  access_token:         '2402049930-BKzuYbRdqCNjvPVNWgoEhKDXTKKS6G0nkRUXhim',
-  access_token_secret:  'CH08Qfz1MnxVCizsqUnZfuBLEx4fnRkURa88DJnuu8g1H',
+const T = new Twit({
+  consumer_key: process.env.CONSUMER_KEY,
+  consumer_secret: process.env.CONSUMER_SECRET,
+  access_token: process.env.ACCESS_TOKEN,
+  access_token_secret:process.env.ACCESS_TOKEN_SECRET,
   timeout_ms:           60*1000,  // optional HTTP request timeout to apply to all requests.
 });
 
@@ -32,6 +29,6 @@ app.get('/:word', function (req, res) {
 });
 
 // listen for requests :)
-var listener = app.listen(process.env.PORT, function () {
+var listener = app.listen(process.env.PORT || 8080, function () {
   console.log('Your app is listening on port ' + listener.address().port);
 });
