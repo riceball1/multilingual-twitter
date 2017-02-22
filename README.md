@@ -7,9 +7,8 @@
 
 Users are able to query twitter with a keyword and return results based on a limited number of tweets. The tweets will be displayed in a list, and a translate tool box will appear above the tweets list. Users can choose a language and it will translate the tweets into the selected language. Individual tweets can be tweeted out using a tweet button that opens a twitter modal that allows user to edit the text. Users also will be able to toggle between the original language and translated language of the individual tweets. Users can also click on the avatar and username/handle to go to the twitter's user page.
 
-##Demo Page
-###http://www.danafng.com/thinkful/capstone1/
-### Gomix Demo: https://tweet-translate.gomix.me/
+[DEMO on Heroku](https://intense-sierra-99950.herokuapp.com/)
+
 
 ##Technologies Used
 
