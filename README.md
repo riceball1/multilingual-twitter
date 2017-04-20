@@ -11,7 +11,11 @@ Users are able to query twitter with a keyword and return results based on a lim
 
 ## Technologies Used
 
-+ HTML/CSS/JavaScript/jQuery 2.2.3
++ HTML
++ Sass + CSS
++ JavaScript/jQuery 2.2.3
++ Heroku
++ Node + Express
 
 ## APIs
 
