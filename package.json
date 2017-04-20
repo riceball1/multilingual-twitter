@@ -4,7 +4,8 @@
   "description": "An app that uses Twitter API to query posts and Yandex API to translate posts",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "dependencies": {
     "dotenv": "^4.0.0",
