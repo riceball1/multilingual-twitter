@@ -1,5 +1,4 @@
 {
-
   "name": "multilingual-twitter",
   "version": "0.0.1",
   "description": "An app that uses Twitter API to query posts and Yandex API to translate posts",
@@ -8,6 +7,7 @@
     "start": "node server.js"
   },
   "dependencies": {
+    "dotenv": "^4.0.0",
     "express": "^4.14.0",
     "twit": "^2.2.5"
   },

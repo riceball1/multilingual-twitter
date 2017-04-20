@@ -1,12 +1,13 @@
 // server.js
+const dotenv = require('dotenv');
+dotenv.load();
+
 const Twit = require('twit');
 const express = require('express');
 const app = express();
 const path = require('path');
 
-
 app.use(express.static('public'));
-
 
 const T = new Twit({
   consumer_key: process.env.CONSUMER_KEY,
@@ -16,19 +17,20 @@ const T = new Twit({
   timeout_ms:           60*1000,  // optional HTTP request timeout to apply to all requests.
 });
 
-// http://expressjs.com/en/starter/basic-routing.html
 app.get("/", function (request, response) {
   response.sendFile(__dirname + '/views/index.html');
 });
 
-// respond with "hello world" when a GET request is made to the homepage
+app.get("/app", funciton (request, response) {
+  response.sendFile(__dirname + '/views/app.html');
+});
+
 app.get('/:word', function (req, res) {
   T.get('search/tweets', { q: '#'+req.params.word, count: 100 }, function(err, data, response) {
     res.jsonp(data);
   });
 });
 
-// listen for requests :)
 var listener = app.listen(process.env.PORT || 8080, function () {
   console.log('Your app is listening on port ' + listener.address().port);
 });
