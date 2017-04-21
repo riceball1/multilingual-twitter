@@ -1,12 +1,9 @@
-/* colors:
-	#E63663 - bright coral
-	#03A9F4 - bright blue
-	#95A5A6 - grayish
-	#494F4F - darkgray
-*/
-
-
-// $coral: #E63663;
+// colors
+$blue: #03A9F4;
+$gray: #95A5A6;
+$dgray: #494F4F;
+$coral: #E63663;
+$jade: #4CAF50;
 
 
 * {
@@ -18,7 +15,7 @@ html, body {
 	color: #000;
 }
 a:link, a {
-	color: #03A9F4 ;
+	color: $dgray ;
 	text-decoration: none;
 	font-weight: bold;
 	font-size: 12px;
@@ -55,7 +52,7 @@ header {
 	margin: 0 auto;
 }
 h1 {
-	color: #03A9F4;
+	color: $dgray;
 	font-size: 400%;
 	margin: 0px;
 	font-family: 'Bree Serif', serif;
@@ -84,7 +81,7 @@ h1 {
 	font-weight: bold;
 }
 .submit-button:hover {
-	color: #95A5A6;
+	color: $gray;
 }
 input[type="text"], #limitTweeterItems {
 	padding: 10px;
@@ -101,7 +98,7 @@ input[type="text"], #limitTweeterItems {
 
 /** TWEET LIST **/
 .tweet-list {
-	border: 1px solid #95A5A6;
+	border: 1px solid $gray;
 	width: 80%;
 	height: 600px;
 	margin: 10px auto;
@@ -111,7 +108,7 @@ input[type="text"], #limitTweeterItems {
 .individual-tweets {
 	margin: 5px;
 	padding: 10px;
-	border: 1px solid #95A5A6;
+	border: 1px solid $gray;
 	border-radius: 2px;
 	background-color: #FFF;
 	z-index: -100;
@@ -136,7 +133,7 @@ span.authorHandle {
 	color: #494F4F;
 }
 .timestamp {
-	color: #494F4F;
+	color: $dgray;
 	font-size: 12px;
 	margin-left: 10px;
 }
@@ -176,7 +173,7 @@ span.authorHandle {
 /* Change color of dropdown links on hover */
 .dropdown-content option:hover {
 	background-color: #f1f1f1;
-	color: #03A9F4;
+	color: $dgray;
 	cursor: pointer;
 }
 /* Show the dropdown menu on hover */
@@ -214,6 +211,29 @@ span.authorHandle {
 .hidden {
 	display: none;
 }
+
+/** index **/
+
+.enter-app {
+	border: none;
+	background: $jade;
+	padding: 10px;
+	margin: 10px auto;
+	width: 50%;
+	color: white;
+	font-size: 2em;
+	cursor: pointer;
+	&:hover {
+		background-color: $dgray;
+		color: $jade;
+	}
+}
+
+.main-content {
+	text-align: center;
+	margin: 20px auto;
+}
+
 
 /** MEDIA QUERIES **/
 @media (max-width: 900px) {
