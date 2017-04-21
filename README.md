@@ -16,6 +16,7 @@ Users are able to query twitter with a keyword and return results based on a lim
 + JavaScript/jQuery 2.2.3
 + Heroku
 + Node + Express
++ Gulp.js
 
 ## APIs
 

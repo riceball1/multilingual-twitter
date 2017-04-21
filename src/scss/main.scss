@@ -1,13 +1,17 @@
-* {
-	box-sizing: border-box;
-}
-
 /* colors:
 	#E63663 - bright coral
 	#03A9F4 - bright blue
 	#95A5A6 - grayish
 	#494F4F - darkgray
 */
+
+
+// $coral: #E63663;
+
+
+* {
+	box-sizing: border-box;
+}
 
 html, body {
 	min-height: 100%;

@@ -18,11 +18,11 @@ const T = new Twit({
 });
 
 app.get("/", function (request, response) {
-  response.sendFile(__dirname + '/views/index.html');
+  response.sendFile(__dirname + '/public/views/index.html');
 });
 
 app.get("/app", function (request, response) {
-  response.sendFile(__dirname + '/views/app.html');
+  response.sendFile(__dirname + '/public/views/app.html');
 });
 
 app.get('/:word', function (req, res) {
