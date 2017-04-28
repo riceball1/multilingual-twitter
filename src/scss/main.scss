@@ -4,6 +4,7 @@ $gray: #95A5A6;
 $dgray: #494F4F;
 $coral: #E63663;
 $jade: #4CAF50;
+$teal: #2ebcbc;
 
 
 * {
@@ -53,10 +54,10 @@ header {
 }
 h1 {
 	color: $dgray;
-	font-size: 400%;
-	margin: 0px;
+	font-size: 3em;
+	margin: 5%;
 	font-family: 'Bree Serif', serif;
-	text-shadow: 0px 4px rgba(0,0,0,0.2);
+	// text-shadow: 0px 4px rgba(0,0,0,0.2);
 }
 .subtitle {
 	color: #E63663;
@@ -219,7 +220,7 @@ span.authorHandle {
 	background: $jade;
 	padding: 10px;
 	margin: 10px auto;
-	width: 50%;
+	width: 30%;
 	color: white;
 	font-size: 2em;
 	cursor: pointer;

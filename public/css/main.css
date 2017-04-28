@@ -44,10 +44,9 @@ header {
 
 h1 {
   color: #494F4F;
-  font-size: 400%;
-  margin: 0px;
-  font-family: 'Bree Serif', serif;
-  text-shadow: 0px 4px rgba(0, 0, 0, 0.2); }
+  font-size: 3em;
+  margin: 5%;
+  font-family: 'Bree Serif', serif; }
 
 .subtitle {
   color: #E63663;
@@ -205,7 +204,7 @@ span.authorHandle {
   background: #4CAF50;
   padding: 10px;
   margin: 10px auto;
-  width: 50%;
+  width: 30%;
   color: white;
   font-size: 2em;
   cursor: pointer; }
