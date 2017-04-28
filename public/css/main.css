@@ -3,13 +3,12 @@
   font-family: 'PT Sans', sans-serif; }
 
 html {
-  height: 100%;
-  position: relative; }
+  min-height: 100%;
+  position: relative;
+  margin-top: 100px; }
 
 body {
-  margin-top: 100px;
-  min-height: 100%;
-  color: #000; }
+  background-color: #ededed; }
 
 a:link,
 a {
@@ -17,9 +16,6 @@ a {
   text-decoration: none;
   font-weight: bold;
   font-size: 12px; }
-
-a:hover {
-  color: white; }
 
 .tools {
   padding: 20px;
@@ -31,9 +27,8 @@ header {
   position: absolute;
   width: 100%;
   height: 50%;
-  background: #1d1f1f;
-  top: 0;
-  margin-bottom: 100px; }
+  top: -50px;
+  margin-bottom: 40px; }
 
 h1 a:link {
   color: #2ebcbc;
@@ -44,15 +39,15 @@ h1 a:link {
   font-size: 1.5em; }
 
 .subtitle {
-  color: #E63663;
+  color: #1d1f1f;
   font-size: 1.5em;
   margin: 2%; }
 
 /* form */
-.input-field-labels p {
-  display: inline;
+.instructions p {
   width: 50%;
-  margin: 5%; }
+  margin: 0 auto;
+  margin-bottom: 5%; }
 
 .search-form {
   padding: 20px;
@@ -95,7 +90,7 @@ input[type="text"],
 .individual-tweets {
   margin: 5px;
   padding: 10px;
-  border: 1px solid #95A5A6;
+  border: 1px solid #ededed;
   border-radius: 2px;
   background-color: #FFF;
   z-index: -100; }
@@ -207,9 +202,9 @@ span.authorHandle {
 /** index **/
 .enter-app {
   border: none;
-  background: #2ebcbc;
+  background: #1d1f1f;
   padding: 10px;
-  margin: 10px auto;
+  margin: 5% auto;
   width: 30%;
   color: white;
   font-size: 2em;
@@ -218,12 +213,11 @@ span.authorHandle {
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
   .enter-app:hover {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-    background-color: white;
-    color: #E63663; }
+    background-color: #2ebcbc; }
 
 .main-content {
   text-align: center;
-  margin: 400px auto 100px auto; }
+  margin: 300px auto 80px auto; }
 
 nav {
   text-align: center;
@@ -237,7 +231,7 @@ nav {
   display: block;
   width: 70%;
   height: 200px;
-  margin: 0px auto;
+  margin: 50px auto;
   padding: 10px; }
 
 /** FOOTER **/
@@ -262,7 +256,7 @@ footer {
   #twitter-keyword-entry {
     width: 300px; }
   section.search-form {
-    margin-top: 150px; } }
+    margin-top: 80px; } }
 
 @media (max-width: 600px) {
   input[type="text"],

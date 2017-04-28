@@ -1,6 +1,6 @@
 // colors
 $blue: #03A9F4;
-$gray: #95A5A6;
+$gray: #ededed;
 $dgray: #1d1f1f;
 $coral: #E63663;
 $jade: #4CAF50;
@@ -9,17 +9,17 @@ $maincolor: $teal;
 * {
     box-sizing: border-box;
     font-family: 'PT Sans', sans-serif;
+    
 }
 
 html {
-    height: 100%;
+    min-height: 100%;
     position: relative;
+    margin-top: 100px;
 }
 
 body {
-    margin-top: 100px;
-    min-height: 100%;
-    color: #000;
+	background-color: $gray;
 }
 
 a:link,
@@ -30,9 +30,6 @@ a {
     font-size: 12px;
 }
 
-a:hover {
-    color: white;
-}
 
 .tools {
     padding: 20px;
@@ -47,9 +44,8 @@ header {
     position: absolute;
     width: 100%;
     height: 50%;
-    background: $dgray;
-    top: 0;
-    margin-bottom: 100px;
+    top: -50px;
+    margin-bottom: 40px;
 }
 
 h1 a:link {
@@ -58,11 +54,11 @@ h1 a:link {
     width: 100%;
     margin: 0;
     padding: 0 5%;
-    font-size: 1.5em;
+    font-size: 1.5em; 
 }
 
 .subtitle {
-    color: $coral;
+    color: $dgray;
     font-size: 1.5em;
     margin: 2%;
 }
@@ -70,10 +66,10 @@ h1 a:link {
 
 /* form */
 
-.input-field-labels p {
-    display: inline;
+.instructions p {
     width: 50%;
-    margin: 5%;
+    margin: 0 auto;
+    margin-bottom: 5%;
 }
 
 .search-form {
@@ -270,9 +266,9 @@ span.authorHandle {
 
 .enter-app {
     border: none;
-    background: $maincolor;
+    background: $dgray;
     padding: 10px;
-    margin: 10px auto;
+    margin: 5% auto;
     width: 30%;
     color: white;
     font-size: 2em;
@@ -281,14 +277,13 @@ span.authorHandle {
     transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
     &:hover {
         box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-        background-color: white;
-        color: $coral;
+        background-color: $maincolor;
     }
 }
 
 .main-content {
     text-align: center;
-    margin: 400px auto 100px auto;
+    margin: 300px auto 80px auto;
 }
 
 nav {
@@ -306,7 +301,7 @@ nav {
     display: block;
     width: 70%;
     height: 200px;
-    margin: 0px auto;
+    margin: 50px auto;
     // border: 1px solid $dgray;
     padding: 10px;
 }
@@ -343,7 +338,7 @@ footer {
    
 
     section.search-form {
-    	margin-top: 150px;
+    	margin-top: 80px;
     }
 }
 
