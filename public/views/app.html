@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Multilingual Tweeter</title>
 	<!-- external style sheets -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
 	<!-- fonts -->
  	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+ 	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
  	<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
  	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
  	<!-- customized css -->
   	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-<header>
-	<h1>Multilingual Tweeter</h1>
-	<p class="subtitle">Tweet in the Language of Your Choice</p>
-</header>
-<div class="overlay"></div>
+<nav>
+	<h1><a href="/">Multilingual Twitter</a></h1>
+</nav>
 <main class="container">
 	<section class="search-form">
+	<div class="input-field-labels">
+		<p>search for tweets</p> 
+		<p>limit tweets</p> 
+	</div>
 	<form id="js-twitter-form">
-      <input type="text" name="twitter-keyword-entry" id="twitter-keyword-entry" placeholder="search twitter here" required>
-			<!-- <img src="images/magnifer.png" class="search-glass"> -->
+      <input type="text" name="twitter-keyword-entry" id="twitter-keyword-entry" placeholder="enter keyword here" required>
       <input type="number" name="limitTweeterItems" id="limitTweeterItems" placeholder="# of tweets" min="1" value="3">
       <button class="js-submit-search submit-button" type="btn">submit</button>
     </form>

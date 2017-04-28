@@ -1,81 +1,81 @@
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: 'PT Sans', sans-serif; }
 
-html, body {
+html {
+  height: 100%;
+  position: relative; }
+
+body {
+  margin-top: 100px;
   min-height: 100%;
   color: #000; }
 
-a:link, a {
-  color: #494F4F;
+a:link,
+a {
+  color: #2ebcbc;
   text-decoration: none;
   font-weight: bold;
   font-size: 12px; }
 
 a:hover {
-  color: #000; }
-
-body {
-  font-family: 'Roboto', sans-serif;
-  background-color: #ddd;
-  padding: 10px;
-  position: relative; }
-
-.container {
-  margin: 0px auto;
-  padding: 10px; }
+  color: white; }
 
 .tools {
   padding: 20px;
   text-align: center; }
 
-#twitter-keyword-entry {
-  position: relative; }
-
-.search-glass {
-  position: absolute;
-  right: 0;
-  width: 16px;
-  height: auto; }
-
 /* header */
 header {
   text-align: center;
-  margin: 0 auto; }
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  background: #1d1f1f;
+  top: 0;
+  margin-bottom: 100px; }
 
-h1 {
-  color: #494F4F;
-  font-size: 3em;
-  margin: 5%;
-  font-family: 'Bree Serif', serif; }
+h1 a:link {
+  color: #2ebcbc;
+  font-family: Arial, serif;
+  width: 100%;
+  margin: 0;
+  padding: 0 5%;
+  font-size: 1.5em; }
 
 .subtitle {
   color: #E63663;
-  font-size: 1.2em;
-  text-shadow: 0px 2px rgba(0, 0, 0, 0.2); }
+  font-size: 1.5em;
+  margin: 2%; }
 
 /* form */
+.input-field-labels p {
+  display: inline;
+  width: 50%;
+  margin: 5%; }
+
 .search-form {
   padding: 20px;
   text-align: center; }
 
 .submit-button {
-  font-size: 30px;
+  cursor: pointer;
+  font-size: 1.2em;
   padding: 10px;
-  width: 15%;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 2px;
   border: none;
-  background-color: #E63663;
+  background-color: #1d1f1f;
   color: #FFF;
   font-weight: bold; }
+  .submit-button:hover {
+    color: #2ebcbc; }
 
-.submit-button:hover {
-  color: #95A5A6; }
-
-input[type="text"], #limitTweeterItems {
+input[type="text"],
+#limitTweeterItems {
   padding: 10px;
-  border-radius: 10px;
-  border: 2px solid #E63663;
+  border-radius: 2px;
+  border: 2px solid #1d1f1f;
   width: 40%;
   font-size: 30px; }
 
@@ -86,12 +86,11 @@ input[type="text"], #limitTweeterItems {
 
 /** TWEET LIST **/
 .tweet-list {
-  border: 1px solid #95A5A6;
   width: 80%;
-  height: 600px;
   margin: 10px auto;
-  overflow: auto;
-  border-radius: 5px; }
+  border-radius: 3px;
+  background-color: #1d1f1f;
+  padding: 5px; }
 
 .individual-tweets {
   margin: 5px;
@@ -109,7 +108,9 @@ img.avatar {
   height: 60px;
   margin-right: 5px; }
 
-span.authorName, span.authorHandle, span.timestamp {
+span.authorName,
+span.authorHandle,
+span.timestamp {
   position: relative;
   top: -5px; }
 
@@ -121,7 +122,7 @@ span.authorHandle {
   color: #494F4F; }
 
 .timestamp {
-  color: #494F4F;
+  color: #1d1f1f;
   font-size: 12px;
   margin-left: 10px; }
 
@@ -130,7 +131,7 @@ span.authorHandle {
 
 /* DROPDOWN MENU */
 .dropbtn {
-  background-color: #4CAF50;
+  background-color: #2ebcbc;
   color: white;
   padding: 16px;
   font-size: 16px;
@@ -148,7 +149,8 @@ span.authorHandle {
   position: absolute;
   background-color: #f9f9f9;
   width: 400px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); }
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  margin-bottom: 120px; }
 
 /* Links inside the dropdown */
 .dropdown-content option {
@@ -160,7 +162,7 @@ span.authorHandle {
 /* Change color of dropdown links on hover */
 .dropdown-content option:hover {
   background-color: #f1f1f1;
-  color: #494F4F;
+  color: #1d1f1f;
   cursor: pointer; }
 
 /* Show the dropdown menu on hover */
@@ -169,7 +171,7 @@ span.authorHandle {
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
-  background-color: #3e8e41; }
+  background-color: #2ebcbc; }
 
 .language-choice {
   display: none;
@@ -198,34 +200,71 @@ span.authorHandle {
 .hidden {
   display: none; }
 
+.fa {
+  font-size: 2em;
+  color: #2ebcbc; }
+
 /** index **/
 .enter-app {
   border: none;
-  background: #4CAF50;
+  background: #2ebcbc;
   padding: 10px;
   margin: 10px auto;
   width: 30%;
   color: white;
   font-size: 2em;
-  cursor: pointer; }
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
   .enter-app:hover {
-    background-color: #494F4F;
-    color: #4CAF50; }
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    background-color: white;
+    color: #E63663; }
 
 .main-content {
   text-align: center;
-  margin: 20px auto; }
+  margin: 400px auto 100px auto; }
+
+nav {
+  text-align: center;
+  width: 100%;
+  background: #1d1f1f;
+  position: fixed;
+  top: 0; }
+
+/** material design box shadows by samuel thornton https://codepen.io/sdthornton/pen/wBZdXq **/
+.app-detail {
+  display: block;
+  width: 70%;
+  height: 200px;
+  margin: 0px auto;
+  padding: 10px; }
+
+/** FOOTER **/
+footer {
+  font-size: 1.2em;
+  text-align: center;
+  height: 60px;
+  background-color: #1d1f1f;
+  color: #2ebcbc;
+  width: 100%;
+  padding: 20px;
+  position: relative;
+  bottom: -300px; }
 
 /** MEDIA QUERIES **/
 @media (max-width: 900px) {
-  input[type="text"], #limitTweeterItems {
+  input[type="text"],
+  #limitTweeterItems {
     font-size: 16px; }
-  .submit-button {
-    font-size: 16px;
-    cursor: pointer; } }
+  #limitTweeterItems {
+    width: 60px; }
+  #twitter-keyword-entry {
+    width: 300px; }
+  section.search-form {
+    margin-top: 150px; } }
 
 @media (max-width: 600px) {
-  input[type="text"], #limitTweeterItems {
-    font-size: 14px; }
-  .submit-button {
+  input[type="text"],
+  #limitTweeterItems {
     font-size: 14px; } }
