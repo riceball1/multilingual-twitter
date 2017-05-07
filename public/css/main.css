@@ -182,14 +182,8 @@ span.authorHandle {
   cursor: pointer; }
 
 .sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0; }
+  font-size: 1.5em;
+  text-align: center; }
 
 /** OTHER STYLES **/
 .hidden {
@@ -217,7 +211,7 @@ span.authorHandle {
 
 .main-content {
   text-align: center;
-  margin: 300px auto 80px auto; }
+  margin: 200px auto 80px auto; }
 
 nav {
   text-align: center;
@@ -226,13 +220,23 @@ nav {
   position: fixed;
   top: 0; }
 
+.front-img {
+  width: 50%;
+  margin: 10px auto;
+  border: 2px solid gray; }
+
 /** material design box shadows by samuel thornton https://codepen.io/sdthornton/pen/wBZdXq **/
 .app-detail {
   display: block;
   width: 70%;
   height: 200px;
-  margin: 50px auto;
+  margin: 20px auto 50px auto;
   padding: 10px; }
+
+#wait {
+  margin: 10px auto;
+  font-size: 1.5em;
+  text-align: center; }
 
 /** FOOTER **/
 footer {

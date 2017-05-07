@@ -9,7 +9,6 @@ $maincolor: $teal;
 * {
     box-sizing: border-box;
     font-family: 'PT Sans', sans-serif;
-    
 }
 
 html {
@@ -19,7 +18,7 @@ html {
 }
 
 body {
-	background-color: $gray;
+    background-color: $gray;
 }
 
 a:link,
@@ -29,7 +28,6 @@ a {
     font-weight: bold;
     font-size: 12px;
 }
-
 
 .tools {
     padding: 20px;
@@ -54,7 +52,7 @@ h1 a:link {
     width: 100%;
     margin: 0;
     padding: 0 5%;
-    font-size: 1.5em; 
+    font-size: 1.5em;
 }
 
 .subtitle {
@@ -78,7 +76,7 @@ h1 a:link {
 }
 
 .submit-button {
-	cursor: pointer;
+    cursor: pointer;
     font-size: 1.2em;
     padding: 10px;
     text-align: center;
@@ -241,14 +239,8 @@ span.authorHandle {
 }
 
 .sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0;
+    font-size: 1.5em;
+    text-align: center;
 }
 
 
@@ -259,9 +251,11 @@ span.authorHandle {
 }
 
 .fa {
-	font-size: 2em;
-	color: $maincolor;
+    font-size: 2em;
+    color: $maincolor;
 }
+
+
 /** index **/
 
 .enter-app {
@@ -283,7 +277,7 @@ span.authorHandle {
 
 .main-content {
     text-align: center;
-    margin: 300px auto 80px auto;
+    margin: 200px auto 80px auto;
 }
 
 nav {
@@ -294,6 +288,12 @@ nav {
     top: 0;
 }
 
+.front-img {
+    width: 50%;
+    margin: 10px auto;
+    border: 2px solid gray;
+}
+
 
 /** material design box shadows by samuel thornton https://codepen.io/sdthornton/pen/wBZdXq **/
 
@@ -301,9 +301,15 @@ nav {
     display: block;
     width: 70%;
     height: 200px;
-    margin: 50px auto;
+    margin: 20px auto 50px auto;
     // border: 1px solid $dgray;
     padding: 10px;
+}
+
+#wait {
+    margin: 10px auto;
+    font-size: 1.5em;
+    text-align: center;
 }
 
 
@@ -335,10 +341,8 @@ footer {
     #twitter-keyword-entry {
         width: 300px;
     }
-   
-
     section.search-form {
-    	margin-top: 80px;
+        margin-top: 80px;
     }
 }
 
@@ -347,5 +351,4 @@ footer {
     #limitTweeterItems {
         font-size: 14px;
     }
-    
 }
