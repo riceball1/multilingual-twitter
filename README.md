@@ -4,10 +4,21 @@
 
 # [DEMO on Heroku](https://multilingual-twitter.herokuapp.com/)
 
+## Getting Started
+
+- Clone the repo: `git clone https://github.com/riceball1/multilingual-twitter.git`
+- Go to project: `cd multilingual-twitter`
+- Make sure all modules are installed: `npm install`
+- Start running app: `npm start`
+- Checkout in the browser `localhost:8080`
+
+### Development
+- Run the gulp build tool by going into the project folder and running `gulp` command in the commandline
+- If you have nodemon installed globally, you can also use `npm run dev` if making changes to the project 
+
 ## Use Case
 
 Users are able to query twitter with a keyword and return results based on a limited number of tweets. The tweets will be displayed in a list, and a translate tool box will appear above the tweets list. Users can choose a language and it will translate the tweets into the selected language. Individual tweets can be tweeted out using a tweet button that opens a twitter modal that allows user to edit the text. Users also will be able to toggle between the original language and translated language of the individual tweets. Users can also click on the avatar and username/handle to go to the twitter's user page.
-
 
 ## Technologies Used
 
